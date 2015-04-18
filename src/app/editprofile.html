@@ -1,0 +1,10 @@
+{{ template "header.html" . }}
+
+<h1>Editing {{.ProjectName}}</h1>
+
+<form action="/save/{{.ProjectId}}" method="POST">
+    <div><textarea name="body" rows="20" cols="80">{{printf "%s" .ProjectName}}</textarea></div>
+    <div><input type="submit" value="Save"></div>
+</form>
+
+{{ template "footer.html" . }}

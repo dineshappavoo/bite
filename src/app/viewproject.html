@@ -1,0 +1,50 @@
+{{ template "header.html" . }}
+<h1>{{.ProjectName}}</h1>
+
+<p>[<a href="/editproject/{{.ProjectId}}">edit</a>]</p><br>
+<div class="navbar-right"><br>
+    <form class="navbar-form" action="/newproject/" method="POST">
+        <button type="submit" class="btn btn-success">Add New Project</button>
+    </form>
+</div>
+
+<div class="container">
+    <p><br>At a time when so much depends on being better informed, “I don’t know” has to be one of the most frustrating responses around. And yet “I don’t know” is everywhere. “I don’t know” touches everything.We now have more data about more things, available to more people, than ever before. But at the same time, we’re overwhelmed by the volume and variety of all this data.
+    <br></p>
+    <!-- Example row of columns -->
+    <div class="row">
+        <!-- 4:3 aspect ratio  class="col-md-7"-->
+        <!--
+        <div class="embed-responsive embed-responsive-4by3 well-sm well col-md-7">
+            <iframe class="embed-responsive-item"width="250" height="245" src="http://www.youtube.com/embed/GlZC4Jwf3xQ?controls=2&showinfo=0&rel=0" allowfullscreen autohide="1" color="white">
+            </iframe>
+        </div>
+        <div class="embed-responsive embed-responsive-4by3 well-sm well col-md-7">
+            <iframe class="embed-responsive-item" src="//www.slideshare.net/slideshow/embed_code/34228704?startSlide=2" width="250" height="245" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+            <!--
+             <div style="margin-bottom:5px">
+             <strong> <a href="//www.slideshare.net/JacobRhoden/cassandra-with-go" title="Introduction to using Cassandra with Go" target="_blank">Introduction to using Cassandra with Go</a> </strong> from <strong><a href="//www.slideshare.net/JacobRhoden" target="_blank">Jacob Rhoden</a></strong>
+             </div>
+             -->
+        <div class="embed-responsive embed-responsive-4by3 well-sm well">
+            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/GlZC4Jwf3xQ?controls=2&showinfo=0&rel=0" allowfullscreen autohide="1" color="white">
+            </iframe>
+        </div>
+        <div class="embed-responsive embed-responsive-4by3 well-sm well">
+            <iframe class="embed-responsive-item" src="//www.slideshare.net/slideshow/embed_code/34228704?startSlide=2" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+            <!--
+             <div style="margin-bottom:5px">
+             <strong> <a href="//www.slideshare.net/JacobRhoden/cassandra-with-go" title="Introduction to using Cassandra with Go" target="_blank">Introduction to using Cassandra with Go</a> </strong> from <strong><a href="//www.slideshare.net/JacobRhoden" target="_blank">Jacob Rhoden</a></strong>
+             </div>
+             -->
+        </div>
+    </div>
+    <p>
+    Knowing has become absurdly time-consuming. Meaning and understanding have become luxuries few can afford. And making decisions based on all the facts has become next to impossible.Well, we believe it’s time for this situation to change.
+    We believe our ability to collect data should be equally matched by our ability to see, question, and analyze everything we collect.</p>
+    
+    <div>{{printf "%s" .ProjectName}}</div>
+
+</div>
+
+{{ template "footer.html" . }}

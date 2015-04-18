@@ -1,0 +1,17 @@
+{{ template "header.html" . }}
+
+<h1>Editing {{.ProjectName}}</h1>
+<br>
+<form action="/addproject/" align="center" method="POST">
+	
+    Project Name : *  <input type="text" name="project_name"><br>
+    Version : *       <input type="text" name="project_version"><br>
+        Youtube URL : *   <input type="text" name="youtube_url"><br>
+    Slide Share URL : <input type="text" name="slideshare_url"><br>
+    Github URL :      <input type="text" name="github_url"><br>
+    Referrence URL :  <input type="text" name="ref_url"><br>
+    Download URL : *  <input type="text" name="download_url"><br>
+    <input type="submit" value="Create Project">
+</form><br><br><br>
+
+{{ template "footer.html" . }}

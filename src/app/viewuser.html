@@ -1,0 +1,40 @@
+{{ template "header.html" . }}
+<h1>{{.ProjectName}}</h1>
+
+<p>[<a href="/edit/{{.ProjectId}}">edit</a>]</p><br>
+
+<table align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+         <center>
+          <iframe width="650" height="445" src="http://www.youtube.com/embed/GlZC4Jwf3xQ" frameborder="0" allowfullscreen autohide="1" color="white">
+          </iframe>
+        </center>
+        </td>
+
+<td>
+
+<!-- Embedding slideshare -->
+        <center>
+            <!--
+                <iframe src="//www.slideshare.net/slideshow/embed_code/34228704" width="425" height="415" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+                </iframe>
+              -->
+                
+                <iframe src="//www.slideshare.net/slideshow/embed_code/34228704?startSlide=2" width="525" height="425" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+               
+               <div style="margin-bottom:5px">
+                    <strong> <a href="//www.slideshare.net/JacobRhoden/cassandra-with-go" title="Introduction to using Cassandra with Go" target="_blank">Introduction to using Cassandra with Go</a> </strong> from <strong><a href="//www.slideshare.net/JacobRhoden" target="_blank">Jacob Rhoden</a></strong>
+                </div>
+                
+            </center>
+        </td>
+    </tr>
+</table>
+
+
+
+
+<div>{{printf "%s" .ProjectName}}</div>
+{{ template "footer.html" . }}
