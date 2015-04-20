@@ -212,7 +212,7 @@ func renderTemplate(w http.ResponseWriter, tmpl string, p interface{}) {
 }
 
 //URL validation
-var validPath = regexp.MustCompile("^/(home|editproject|saveproject|viewproject|searchproject|newproject|addproject)/(|[a-zA-Z0-9]+)$")
+var validPath = regexp.MustCompile("^/(home|editfood|savefood|viewfood|searchfood|newfood|addfood)/(|[a-zA-Z0-9]+)$")
 
 func makeHandler(fn func(http.ResponseWriter, *http.Request, string)) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -231,12 +231,12 @@ func main() {
 	flag.Parse()
 	//TestConn()
 	http.HandleFunc("/home/", makeHandler(homeHandler))
-	http.HandleFunc("/viewproject/", makeHandler(viewHandler))
-	http.HandleFunc("/editproject/", makeHandler(editHandler))
-	http.HandleFunc("/saveproject/", makeHandler(saveHandler))
-	http.HandleFunc("/searchproject/", makeHandler(searchHandler))
-	http.HandleFunc("/newproject/", makeHandler(newProjectHandler))
-	http.HandleFunc("/addproject/", makeHandler(addProjectHandler))
+	http.HandleFunc("/viewfood/", makeHandler(viewHandler))
+	http.HandleFunc("/editfood/", makeHandler(editHandler))
+	http.HandleFunc("/savefood/", makeHandler(saveHandler))
+	http.HandleFunc("/searchfood/", makeHandler(searchHandler))
+	http.HandleFunc("/newfood/", makeHandler(newProjectHandler))
+	http.HandleFunc("/addfood/", makeHandler(addProjectHandler))
 	http.Handle("/resources/", http.StripPrefix("/resources/", http.FileServer(http.Dir("resources"))))
 	//http.Handle("/templ/", http.StripPrefix("/templ/", http.FileServer(http.Dir("templ"))))
 

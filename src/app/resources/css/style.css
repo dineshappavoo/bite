@@ -51,8 +51,8 @@
 
 #logo a img {
 	float: left;
-	width: auto;
-	height: 34px;
+	width: 64px;
+	height: 54px;
 }
 
 .boxed #logo a img {
@@ -3331,7 +3331,9 @@ img.rsImg {
 	margin-top: 18px;
 }
 
-.rsSlideTitle.button:hover { background-color: rgba(255,255,255,0.35); }
+.rsSlideTitle.button:hover { background-color: rgba(255,255,255,0.35);
+
+ }
 
 
 /* Homepage Slider Alternative
@@ -4434,8 +4436,34 @@ ul.share-post li a.rate-recipe {
 	box-shadow: none;
 	margin-top: -44px;
 }
+.newsletter-btn-pink {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	z-index: 5;
+	position: relative;
+	padding: 12px;
+	line-height: 18px;
+	margin: 0;
+	height: 44px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	background-color: #F08080;
+	border: none;
+	color: #fff;
+	box-shadow: none;
+	margin-top: -44px;
+}
 
 .newsletter-btn:hover { background-color: #a0a0a0; }
+.newsletter-btn-pink:hover { background-color: #a0a0a0; }
+
 
 input.newsletter {
 	float: left;
@@ -6106,6 +6134,16 @@ ol.directions > li:before {
 	a.blockTitle { font-size: 19px; line-height: 26px; }
 	
 	.isotope-box {margin-bottom: 20px !important;}
+	/*
+	.isotope-box img {
+    border-radius: 50%;
+    position: relative;
+    top: 28px;
+    right: 5px;
+    height: 64px;
+    width: 64px;
+}
+*/
 
 	.product-page { padding: 25px 0 0 0; }
 
